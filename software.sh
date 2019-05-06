@@ -17,19 +17,19 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Install CSF")
-            exit # do nothing yet
+            #exit # do nothing yet
             break
             ;;
         "Install Nginx")
-            exit # do nothing yet
+            #exit # do nothing yet
             break
             ;;
         "Install MariaDB")
-            exit # do nothing yet
+            #exit # do nothing yet
             break
             ;;
         "Install Mattermost")
-            exit # do nothing yet
+            #exit # do nothing yet
             break
             ;;
         "Install UniFi Controller")
