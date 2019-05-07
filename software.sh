@@ -8,28 +8,24 @@ echo -e "\e[92m#################################################################
 
 echo ""
 
-question="\n[ \e[92mMake a choice \e[39m]:"
-choice=`echo -e $question`
+vraag="\n[ \e[92mMaak een keuze \e[39m]:"
+keuze=`echo -e $vraag`
 
-PS3="$choice "
+PS3="$keuze "
 options=("Install CSF" "Install Nginx" "Install MariaDB" "Install Mattermost" "Install UniFi Controller" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
         "Install CSF")
-            #exit # do nothing yet
             break
             ;;
         "Install Nginx")
-            #exit # do nothing yet
             break
             ;;
         "Install MariaDB")
-            #exit # do nothing yet
             break
             ;;
         "Install Mattermost")
-            #exit # do nothing yet
             break
             ;;
         "Install UniFi Controller")
