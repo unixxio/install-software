@@ -8,10 +8,10 @@ echo -e "\e[92m#################################################################
 
 echo ""
 
-vraag="\n[ \e[92mMaak een keuze \e[39m]:"
-keuze=`echo -e $vraag`
+question="\n[ \e[92mMake a choice \e[39m]:"
+choice=`echo -e $question`
 
-PS3="$keuze "
+PS3="$choice "
 options=("Install CSF" "Install Nginx" "Install MariaDB" "Install Mattermost" "Install UniFi Controller" "Quit")
 select opt in "${options[@]}"
 do
@@ -29,7 +29,7 @@ do
             break
             ;;
         "Install UniFi Controller")
-            bash <( curl -sSL https://raw.githubusercontent.com/unixxio/install-unifi-controller/master/install_unifi.sh
+            bash <( curl -sSL https://raw.githubusercontent.com/unixxio/install-unifi-controller/master/install_unifi.sh )
             break
             ;;
         "Quit")
